@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Receitoteca.Views.PaginaInicial"
+             BackgroundColor="#FF6F00"
+             Padding="30">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center" 
+                     HorizontalOptions="Center">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Image Source="prato.png"
+                       WidthRequest="150"
+                       HeightRequest="150"
+                       HorizontalOptions="Center" 
+                       VerticalOptions="Center"
+                       Grid.Row="0"/>
+
+                <StackLayout Grid.Row="4">
+                <Label Text="Bem vindo a sua Receitoteca"
+                       TextColor="White"
+                       FontSize="28"
+                       FontFamily="Bold"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       Grid.Row="1"/>
+
+                    <Label Text="Sua biblioteca de receitas com tudo que você tem em casa"
+                       HorizontalOptions="Center"
+                       TextColor="White"
+                       FontSize="14"
+                       VerticalOptions="CenterAndExpand"/>
+
+                    <Label Text="na palma da sua mão"
+                       HorizontalOptions="Center"
+                       TextColor="White"
+                       FontSize="14"
+                       VerticalOptions="CenterAndExpand"/>
+                </StackLayout>
+
+                <Button BackgroundColor="White"
+                        Text="Vamos cozinhar ?"
+                        TextColor="#FF6F00"
+                        CornerRadius="10"
+                        Grid.Row="5" 
+                        VerticalOptions="EndAndExpand"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
