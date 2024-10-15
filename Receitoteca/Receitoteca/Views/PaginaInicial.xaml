@@ -2,43 +2,44 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Receitoteca.Views.PaginaInicial"
-             BackgroundColor="#FF6F00"
-             Padding="30">
+             BackgroundColor="#FFFFFF"
+             Padding="30"
+             NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
         <StackLayout VerticalOptions="Center" 
                      HorizontalOptions="Center">
 
-                <Image Source="prato.png"
+            <Image Source="prato.png"
                        WidthRequest="300"
                        HeightRequest="300"
                        HorizontalOptions="Center" 
                        VerticalOptions="Center"/>
 
-                <StackLayout>
+            <StackLayout>
                 <Label Text="Bem vindo a sua Receitoteca"
-                       TextColor="White"
+                       TextColor="Black"
                        FontSize="28"
                        FontFamily="Bold"
                        HorizontalOptions="CenterAndExpand"
                        VerticalOptions="CenterAndExpand"/>
 
-                    <Label Text="Sua biblioteca de receitas com tudo que você tem em casa"
+                <Label Text="Sua biblioteca de receitas com tudo que você tem em casa"
                        HorizontalOptions="Center"
-                       TextColor="White"
+                       TextColor="Gray"
                        FontSize="14"
                        VerticalOptions="CenterAndExpand"/>
 
-                    <Label Text="na palma da sua mão"
+                <Label Text="na palma da sua mão"
                        HorizontalOptions="Center"
-                       TextColor="White"
+                       TextColor="Gray"
                        FontSize="14"
                        VerticalOptions="CenterAndExpand"/>
-                </StackLayout>
+            </StackLayout>
 
-            <StackLayout>
-                <Button BackgroundColor="White"
-                        Text="Vamos cozinhar ?"
-                        TextColor="#FF6F00"
+            <StackLayout Margin="0,120,0,0">
+                <Button BackgroundColor="#FF6F00"
+                        Text="Vamos logo, tô com fome..."
+                        TextColor="White"
                         CornerRadius="10"
                         VerticalOptions="End"/>
             </StackLayout>
