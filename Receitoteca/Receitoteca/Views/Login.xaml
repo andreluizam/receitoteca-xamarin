@@ -72,7 +72,11 @@
                     <Label.FormattedText>
                         <FormattedString>
                             <Span Text="Não tem uma conta ? " TextColor="Gray"/>
-                            <Span Text="Crie aqui" TextColor="#5bbe7d"/>
+                            <Span Text="Crie aqui" TextColor="#5bbe7d">
+                                <Span.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding TapCriarConta}"/>
+                                </Span.GestureRecognizers>
+                            </Span>
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>

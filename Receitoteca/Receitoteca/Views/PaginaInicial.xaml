@@ -41,7 +41,8 @@
                         Text="Vamos logo, tô com fome..."
                         TextColor="White"
                         CornerRadius="10"
-                        VerticalOptions="End"/>
+                        VerticalOptions="End"
+                        Command="{Binding BtnStartClicked}"/>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

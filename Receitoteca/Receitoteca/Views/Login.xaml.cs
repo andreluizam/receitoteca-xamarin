@@ -14,7 +14,8 @@ namespace Receitoteca.Views
 	{
 		public Login ()
 		{
-			InitializeComponent ();
+			InitializeComponent();
+			BindingContext = new ViewModel.ViewModelLogin();
 		}
 	}
 }

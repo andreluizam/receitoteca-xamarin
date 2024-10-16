@@ -9,6 +9,7 @@ namespace Receitoteca.Views
         public PaginaInicial()
         {
             InitializeComponent();
+            BindingContext = new ViewModel.ViewModelPaginaInicial();
         }
     }
 }
