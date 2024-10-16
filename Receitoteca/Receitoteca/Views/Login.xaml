@@ -41,7 +41,7 @@
                 </Frame>
 
                 <Label Text="Esqueci minha senha"
-                       TextColor="Red"
+                       TextColor="#5bbe7d"
                        FontSize="16"
                        HorizontalTextAlignment="End"
                        Padding="8">
@@ -52,8 +52,8 @@
 
                 <Button Text="Entrar"
                         TextColor="White"
-                        BackgroundColor="Red"
-                        CornerRadius="10"/>
+                        CornerRadius="10"
+                        BackgroundColor="#5bbe7d"/>
 
                 <Label Text="Ou se preferir"
                        TextColor="Gray"
@@ -63,8 +63,8 @@
 
                 <Button Text="Google"
                         TextColor="White"
-                        BackgroundColor="Red"
-                        CornerRadius="10"/>
+                        CornerRadius="10"
+                        BackgroundColor="#5bbe7d"/>
 
                 <Label FontSize="18"
                        HorizontalTextAlignment="Center"
@@ -72,7 +72,7 @@
                     <Label.FormattedText>
                         <FormattedString>
                             <Span Text="Não tem uma conta ? " TextColor="Gray"/>
-                            <Span Text="Crie aqui" TextColor="Red"/>
+                            <Span Text="Crie aqui" TextColor="#5bbe7d"/>
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>

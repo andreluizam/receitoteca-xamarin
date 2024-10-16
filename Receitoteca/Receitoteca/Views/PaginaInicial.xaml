@@ -37,7 +37,7 @@
             </StackLayout>
 
             <StackLayout Margin="0,120,0,0">
-                <Button BackgroundColor="#FF6F00"
+                <Button BackgroundColor="#5bbe7d"
                         Text="Vamos logo, tô com fome..."
                         TextColor="White"
                         CornerRadius="10"
