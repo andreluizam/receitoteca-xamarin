@@ -10,7 +10,8 @@
                        TextColor="Black"
                        FontSize="22"/>
 
-            <StackLayout Margin="0,30,0,0">
+            <StackLayout HorizontalOptions="Center"
+                         VerticalOptions="Center">
 
                 <Label Text="Usuário"
                        TextColor="Black"
