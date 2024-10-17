@@ -4,6 +4,7 @@ using Android.App;
 using Android.Content.PM;
 using Android.Runtime;
 using Android.OS;
+using Xamarin.Forms.Platform.Android;
 
 namespace Receitoteca.Droid
 {
@@ -13,6 +14,8 @@ namespace Receitoteca.Droid
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+
+            this.SetStatusBarColor(Xamarin.Forms.Color.FromHex("#FFFFFF").ToAndroid());
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);

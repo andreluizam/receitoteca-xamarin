@@ -13,7 +13,7 @@ namespace Receitoteca.ViewModel
         {
             BtnStartClicked = new Command(async () =>
             {
-                await Application.Current.MainPage.Navigation.PushModalAsync(new Login());
+                await Application.Current.MainPage.Navigation.PushAsync(new Login());
             });
         }
     }

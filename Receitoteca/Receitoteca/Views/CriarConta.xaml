@@ -3,95 +3,101 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Receitoteca.Views.CriarConta"
              Padding="20"
-             BackgroundColor="White">
+             BackgroundColor="White"
+             NavigationPage.BackButtonTitle="Voltar">
 
     <ContentPage.Content>
-        <StackLayout Spacing="20"
-                VerticalOptions="Center">
+
+        <StackLayout Spacing="100">
+
             <Label Text="Criar conta"
                    FontSize="30"
                    TextColor="Black"
-                   HorizontalTextAlignment="Center"/>
+                   HorizontalTextAlignment="Center"
+                   TranslationY="15"/>
 
-            <Frame CornerRadius="95"
+            <StackLayout Spacing="20">
+                <Frame CornerRadius="95"
                    Padding="5"
                    BorderColor="#5bbe7d"
                    BackgroundColor="Transparent">
 
-                <StackLayout Orientation="Horizontal"
+                    <StackLayout Orientation="Horizontal"
                              Margin="10,0,0,0">
-                    <Image Source="user.png"
+                        <Image Source="user.png"
                            Aspect="AspectFit"
                            WidthRequest="24"
                            HeightRequest="24"/>
 
-                    <Entry Placeholder="Usuário"
+                        <Entry Placeholder="Usuário"
                            PlaceholderColor="Gray"
                            TextColor="Black"
                            WidthRequest="280"/>
 
-                </StackLayout>
-            </Frame>
+                    </StackLayout>
+                </Frame>
 
 
-            <Frame CornerRadius="95"
+                <Frame CornerRadius="95"
                    Padding="5"
                    BorderColor="#5bbe7d"
                    BackgroundColor="Transparent">
 
-                <StackLayout Orientation="Horizontal"
+                    <StackLayout Orientation="Horizontal"
                              Margin="10,0,0,0">
-                    <Image Source="email.png"
+                        <Image Source="email.png"
                            Aspect="AspectFit"
                            WidthRequest="24"
                            HeightRequest="24"/>
 
-                    <Entry Placeholder="Email"
+                        <Entry Placeholder="Email"
                            PlaceholderColor="Gray"
                            TextColor="Black"
                            Keyboard="Email"
                            WidthRequest="280"/>
-                </StackLayout>
-            </Frame>
+                    </StackLayout>
+                </Frame>
 
-            <Frame CornerRadius="95"
+                <Frame CornerRadius="95"
                    Padding="5"
                    BorderColor="#5bbe7d"
                    BackgroundColor="Transparent">
 
-                <StackLayout Orientation="Horizontal"
+                    <StackLayout Orientation="Horizontal"
                                  Margin="5,0,0,0">
 
-                    <Image Source="senha.png"
+                        <Image Source="senha.png"
                                WidthRequest="32"
                                HeightRequest="32"/>
 
-                    <Entry Placeholder="Senha"
+                        <Entry Placeholder="Senha"
                            PlaceholderColor="Gray"
                            TextColor="Black"
                            WidthRequest="280"/>
-                </StackLayout>
-            </Frame>
+                    </StackLayout>
+                </Frame>
 
-            <Button Text="Criar"
+                <Button Text="Criar"
                         TextColor="White"
                         CornerRadius="95"
-                        BackgroundColor="#5bbe7d"/>
+                        BackgroundColor="#5bbe7d"
+                        Command="{Binding BtnCriarConta}"/>
 
-            <Label FontSize="18"
+                <Label FontSize="18"
                        HorizontalTextAlignment="Center"
-                       Margin="0,100,0,0">
-                <Label.FormattedText>
-                    <FormattedString>
-                        <Span Text="Já possui uma conta ? " TextColor="Gray"/>
-                        <Span Text="Entrar" TextColor="#5bbe7d">
-                            <Span.GestureRecognizers>
-                                <TapGestureRecognizer Command="{Binding TapLogar}"/>
-                            </Span.GestureRecognizers>
-                        </Span>
-                    </FormattedString>
-                </Label.FormattedText>
-            </Label>
+                       Margin="0,50,0,0">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Já possui uma conta ? " TextColor="Gray"/>
+                            <Span Text="Entrar" TextColor="#5bbe7d">
+                                <Span.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding TapLogar}"/>
+                                </Span.GestureRecognizers>
+                            </Span>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

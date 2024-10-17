@@ -12,7 +12,7 @@ namespace Receitoteca.ViewModel
         {
             TapCriarConta = new Command(async() =>
             {
-                // Trabalhar com nova pagina para criar conta
+                await Application.Current.MainPage.Navigation.PushAsync(new CriarConta());
             });
         }
     }

@@ -9,8 +9,7 @@ namespace Receitoteca
         {
             InitializeComponent();
 
-            MainPage = new PaginaInicial();
-            MainPage = new NavigationPage(new CriarConta());
+            MainPage = new NavigationPage(new PaginaInicial());
         }
 
         protected override void OnStart()
